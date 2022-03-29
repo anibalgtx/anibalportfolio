@@ -3,7 +3,7 @@ import { Section } from "../common/Section";
 export function Works() {
   const worksList = [1, 2, 3];
   return (
-    <Section title="Works" bgColor="bg-gray-900" color="white">
+    <Section title="Works" bgColor="bg-gray-900" divider="border-b-white" color="text-white">
       <div className="flex justify-center items-center flex-col lg:flex-row gap-8 py-16 md:gap-16 md:py-32">
         {worksList.map((text, index) => (
           <div

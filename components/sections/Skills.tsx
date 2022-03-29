@@ -27,7 +27,8 @@ export function Skills() {
     <Section
       title="Skills"
       bgColor="bg-white"
-      color="black"
+      color="text-black"
+      divider="border-b-black"
       subtitle="Front-End Developer who writes, elegant, clean and efficient code."
     >
       <div className="pt-8 md:pt-16 pb-16 md:pb-32 mx-12 grid  grid-cols-2 sm:grid-cols-4  lg:grid-cols-8 gap-8 justify-center items-center" >

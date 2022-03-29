@@ -4,6 +4,7 @@ interface SectionInterface {
   title: string;
   bgColor: string;
   color: string;
+  divider: string;
   subtitle?: string;
 }
 export const Section: React.FC<SectionInterface> = ({
@@ -11,14 +12,15 @@ export const Section: React.FC<SectionInterface> = ({
   title,
   bgColor,
   color,
+  divider,
   subtitle,
 }) => {
   return (
     <section className={`${bgColor}`}>
       <div className="md:container md:mx-auto relative">
         <div className="mx-12">
-        <div className={`w-28 border-b-2 border-b-${color}`}>
-          <h1 className={`text-xl md:text-3xl text-${color} pt-16 pb-4`}>
+        <div className={`w-28 border-b-2 ${divider}`}>
+          <h1 className={`text-xl md:text-3xl ${color} pt-16 pb-4`}>
             {title}
           </h1>
         </div>
