@@ -23,7 +23,7 @@ export const NavBarList: React.FC<NavBarListInterface> = ({ active }) => {
               onClick={handleClick(item)}
               className={`lg:inline-flex lg:w-auto w-full py-2  text-black  items-center justify-center text-2xl cursor-pointer ${
                 activeItem === item ? "lg:border-b-2" : ""
-              } lg:border-b-orange-400`}
+              } lg:border-b-orange-400 transition-all`}
             >
               {item}
             </a>
