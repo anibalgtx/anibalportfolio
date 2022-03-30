@@ -1,7 +1,7 @@
 export function GitHubIcon() {
   return (
     <svg
-      height={30}
+      className=" h-7"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 37 37"
