@@ -5,7 +5,7 @@
 @layer components {
   .bg-main {
     background: no-repeat url('../public/Vector.png'), no-repeat url('../public/rightVector.png');
-    background-position: top left, right;
+    background-position: top left, bottom right;
     background-size: 20%, 20%;
     animation: 1.5s ease-out bgAnimation;
   }
