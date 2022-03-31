@@ -459,9 +459,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
-.bg-main {
-    background-image: url('../public/Vector.png')
-  }
 .absolute {
   position: absolute;
 }

@@ -4,7 +4,18 @@
 
 @layer components {
   .bg-main {
-    background: no-repeat url('../public/Vector.png');
-    background-size: 20%;
+    background: no-repeat url('../public/Vector.png'), no-repeat url('../public/rightVector.png');
+    background-position: top left, right;
+    background-size: 20%, 20%;
+    animation: 1.5s ease-out bgAnimation;
+  }
+  @keyframes bgAnimation {
+    0% {
+      background-size: 0%, 0%;
+    }
+    100% {
+      background-size: 20%, 20%;
+
+    }
   }
 }
