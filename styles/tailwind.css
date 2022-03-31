@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .bg-main {
+    background: no-repeat url('../public/Vector.png');
+    background-size: 20%;
+  }
+}

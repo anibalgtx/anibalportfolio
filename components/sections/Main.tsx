@@ -10,8 +10,8 @@ export function Main() {
     <LinkedInIcon key={2} />,
   ];
   return (
-    <main className="md:p-4">
-      <div className="container mx-auto relative h-screen min-h-[600px]">
+    <main className="bg-main">
+      <div className="container mx-auto relative h-screen min-h-[600px] p-4">
         <Navbar />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block">
           <div className="flex flex-col gap-y-12 xl:flex-row xl:gap-x-24 items-center">
