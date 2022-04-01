@@ -18,22 +18,22 @@ import { GraphQLIcon } from "../icons/Skills/GraphQLIcon";
 
 export function Skills() {
   const icons = [
-    <FrontEndIcon key={0} />,
-    <BackEndIcon key={1} />,
-    <HtmlIcon key={2} />,
-    <CssIcon key={3} />,
-    <JavaScriptIcon key={4} />,
-    <ReactIcon key={5} />,
-    <NextJsIcon key={6} />,
-    <SassIcon key={7} />,
-    <TailwindIcon key={8} />,
-    <NodeJsIcon key={9} />,
-    <NestJsIcon key={10} />,
-    <RestApiIcon key={11} />,
-    <MySqlIcon key={12} />,
-    <PostgreSql key={13} />,
-    <MongoDB key={14} />,
-    <GraphQLIcon key={14} />,
+    {name: 'Front-End', icon: <FrontEndIcon key={0} />},
+    {name: 'Back-End', icon: <BackEndIcon key={1} />},
+    {name: 'HTML', icon: <HtmlIcon key={2} />},
+    {name: 'CSS', icon: <CssIcon key={3} />},
+    {name: 'JavaScript', icon: <JavaScriptIcon key={4} />},
+    {name: 'React', icon: <ReactIcon key={5} />},
+    {name: 'Next JS', icon: <NextJsIcon key={6} />},
+    {name: 'Sass', icon: <SassIcon key={7} />},
+    {name: 'Tailwind', icon: <TailwindIcon key={8} />},
+    {name: 'Node JS', icon: <NodeJsIcon key={9} />},
+    {name: 'Nest JS', icon: <NestJsIcon key={10} />},
+    {name: 'REST API', icon: <RestApiIcon key={11} />},
+    {name: 'PostgreSQL', icon: <MySqlIcon key={12} />},
+    {name: 'MySQL', icon: <PostgreSql key={13} />},
+    {name: 'MongoDB', icon: <MongoDB key={14} />},
+    {name: 'GraphQL', icon: <GraphQLIcon key={14} />},
   ];
   return (
     <Section
@@ -46,8 +46,9 @@ export function Skills() {
       <div className="pt-8 md:pt-16 pb-16 md:pb-32 mx-12 grid  grid-cols-2 sm:grid-cols-4  lg:grid-cols-8 gap-8 justify-center items-center">
         {icons.map((Icon, index) => {
           return (
-            <div key={index} className={"flex justify-center"}>
-              {Icon}
+            <div key={index} className={"flex flex-col justify-center items-center"}>
+              {Icon.icon}
+              <span className=" mt-2">{Icon.name}</span>
             </div>
           );
         })}
